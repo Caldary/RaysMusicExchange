@@ -14,8 +14,8 @@ public class DrumsTest {
 
     @Before
     public void before(){
-        drums1 = new Drums("membranophone","red");
-        drums2 = new Drums("membranophone", "gold");
+        drums1 = new Drums("membranophone","red", 3);
+        drums2 = new Drums("membranophone", "gold", 2);
     }
 
     @Test
@@ -31,6 +31,11 @@ public class DrumsTest {
     @Test
     public void canPlayMusic(){
         assertEquals("Drum Sounds", drums1.playMusic());
+    }
+
+    @Test
+    public void hasPedals(){
+        assertEquals(3, drums1.getNumberOfPedals());
     }
 
 }
