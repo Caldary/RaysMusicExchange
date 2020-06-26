@@ -13,8 +13,8 @@ public class SaxophoneTest {
 
     @Before
     public void before(){
-        saxophone1 = new Saxophone("alto", "black");
-        saxophone2 = new Saxophone("tenor", "pink");
+        saxophone1 = new Saxophone("alto", "black", 11);
+        saxophone2 = new Saxophone("tenor", "pink", 11);
     }
 
     @Test
@@ -30,5 +30,10 @@ public class SaxophoneTest {
     @Test
     public void canPlayMusic(){
         assertEquals("Sexy Sounds", saxophone1.playMusic());
+    }
+
+    @Test
+    public void hasNumberOfValves(){
+        assertEquals(11, saxophone1.getNumberOfValves());
     }
 }
