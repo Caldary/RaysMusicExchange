@@ -26,4 +26,9 @@ public class PianoTest {
     public void hasColour(){
         assertEquals("white", piano2.getColour());
     }
+
+    @Test
+    public void canPlayMusic(){
+        assertEquals("Piano Sounds", piano2.playMusic());
+    }
 }

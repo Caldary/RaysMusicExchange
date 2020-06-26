@@ -27,4 +27,10 @@ public class DrumsTest {
     public void hasColour(){
         assertEquals("gold", drums2.getColour());
     }
+
+    @Test
+    public void canPlayMusic(){
+        assertEquals("Drum Sounds", drums1.playMusic());
+    }
+
 }

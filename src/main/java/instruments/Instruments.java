@@ -1,6 +1,8 @@
 package instruments;
 
-public abstract class Instruments {
+import behaviours.IPlay;
+
+public abstract class Instruments implements IPlay {
 
     private String type;
     private String colour;

@@ -26,4 +26,10 @@ public class GuitarTest {
     public void hasColour(){
         assertEquals("purple", guitar2.getColour());
     }
+
+    @Test
+    public void canPlayMusic(){
+        assertEquals("Guitar Sounds", guitar2.playMusic());
+    }
+
 }
