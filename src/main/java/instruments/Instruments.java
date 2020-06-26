@@ -1,4 +1,4 @@
-package Instruments;
+package instruments;
 
 public abstract class Instruments {
 
