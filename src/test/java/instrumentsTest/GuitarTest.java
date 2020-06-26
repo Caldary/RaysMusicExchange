@@ -13,8 +13,8 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar1 = new Guitar("acoustic", "brown");
-        guitar2 = new Guitar("electric", "purple");
+        guitar1 = new Guitar("acoustic", "brown", 6);
+        guitar2 = new Guitar("electric", "purple", 12);
     }
 
     @Test
@@ -32,4 +32,8 @@ public class GuitarTest {
         assertEquals("Guitar Sounds", guitar2.playMusic());
     }
 
+    @Test
+    public void hasNumberOfStrings(){
+        assertEquals(12, guitar2.getNumberOfStrings());
+    }
 }

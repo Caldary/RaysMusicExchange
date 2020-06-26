@@ -34,7 +34,7 @@ public class DrumsTest {
     }
 
     @Test
-    public void hasPedals(){
+    public void hasNumberOfPedals(){
         assertEquals(3, drums1.getNumberOfPedals());
     }
 

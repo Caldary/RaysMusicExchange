@@ -13,8 +13,8 @@ public class PianoTest {
 
     @Before
     public void before(){
-        piano1 = new Piano("grand", "black");
-        piano2 = new Piano("electric", "white");
+        piano1 = new Piano("grand", "black", 32);
+        piano2 = new Piano("electric", "white", 48);
     }
 
     @Test
@@ -30,5 +30,10 @@ public class PianoTest {
     @Test
     public void canPlayMusic(){
         assertEquals("Piano Sounds", piano2.playMusic());
+    }
+
+    @Test
+    public void hasNumberOfKeys(){
+        assertEquals(32, piano1.getNumberOfKeys());
     }
 }
